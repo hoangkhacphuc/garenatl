@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garena</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <script src="./slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="./js/js.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="col">
+            <a href="/"><img src="./img/logo_garena.png" alt="logo"></a>
+        </div>
+        <div class="col">
+            <div class="dropdown">
+                <div class="title">Nền tảng<i class="fa fa-angle-down"></i></div>
+                <div class="list">
+                    <a href="#"><i class="fa fa-desktop"></i><span>Garena trên PC</span></a>
+                    <a href="#"><i class="fa fa-tablet"></i><span>Garena trên điện thoại</span></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="title">Trò chơi<i class="fa fa-angle-down"></i></div>
+                <div class="container">
+                    <div class="list">
+                        <div class="title"><i class="fa fa-desktop"></i><span>Trò chơi máy tính</span></div>
+                        <a href="#"><img src="./img/game_roe.png" alt="Ring Of Elysium"><span>Ring Of Elysium</span></a>
+                        <a href="#"><img src="./img/game_hon.png" alt="Heroes of Newerth"><span>Heroes of Newerth</span></a>
+                        <a href="#"><img src="./img/game_lol.png" alt="League of Legends"><span>League of Legends</span></a>
+                        <a href="#"><img src="./img/game_bns.png" alt="Blade & Soul"><span>Blade & Soul</span></a>
+                        <a href="#"><img src="./img/game_fifa.png" alt="FIFA Online 4"><span>FIFA Online 4</span></a>
+                    </div>
+                    <div class="list">
+                        <div class="title"><i class="fa fa-tablet"></i><span>Trò chơi di động</span></div>
+                        <a href="#"><img src="./img/game_rov.png" alt="ROV"><span>ROV</span></a>
+                        <a href="#"><img src="./img/game_codm.png" alt="Call of Duty: Mobile"><span>Call of Duty: Mobile</span></a>
+                        <a href="#"><img src="./img/game_speed.png" alt="Speed Drifters"><span>Speed Drifters</span></a>
+                        <a href="#"><img src="./img/game_ff.png" alt="Free Fire"><span>Free Fire</span></a>
+                        <a href="#"><img src="./img/game_contra.png" alt="Contra"><span>Contra</span></a>
+                        <a href="#"><img src="./img/game_ftm.png" alt="FAIRY TAIL: Forces Unite!"><span>FAIRY TAIL: Forces Unite!</span></a>
+                        <a href="#"><img src="./img/game_ftth.png" alt="Fantasy Town"><span>Fantasy Town</span></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#">Dịch vụ khách hàng</a>
+        </div>
+        <div class="col">
+            <a href="./regist.html">Đăng ký <i class="fa fa-user-plus"></i></a>
+            <a href="./login.html">Đăng nhập <i class="fa fa-unlock-alt"></i></a>
+        </div>
+        <div class="col"><i class="fa fa-bars" id="btn-menu"></i></div>
+    </div>
+    <div class="menu-responsive">
+        <div class="dropdown" id="equipment">
+            <div class="title"><span>Nền tảng</span><i class="fa fa-angle-down"></i></div>
+            <div class="list">
+                <a href="#"><i class="fa fa-desktop"></i><span>Garena trên PC</span></a>
+                <a href="#"><i class="fa fa-tablet"></i><span>Garena trên điện thoại</span></a>
+            </div>
+        </div>
+        <div class="dropdown" id="game">
+            <div class="title"><span>Trò chơi</span><i class="fa fa-angle-down"></i></div>
+            <div class="container">
+                <div class="list" id="pc-game">
+                    <div class="title"><span>Trò chơi máy tính</span><i class="fa fa-angle-down"></i></div>
+                    <div class="content">
+                        <a href="#"><img src="./img/game_roe.png" alt="Ring Of Elysium"><span>Ring Of Elysium</span></a>
+                        <a href="#"><img src="./img/game_hon.png" alt="Heroes of Newerth"><span>Heroes of Newerth</span></a>
+                        <a href="#"><img src="./img/game_lol.png" alt="League of Legends"><span>League of Legends</span></a>
+                        <a href="#"><img src="./img/game_bns.png" alt="Blade & Soul"><span>Blade & Soul</span></a>
+                        <a href="#"><img src="./img/game_fifa.png" alt="FIFA Online 4"><span>FIFA Online 4</span></a>
+                    </div>
+                </div>
+                <div class="list" id='mobile-game'>
+                    <div class="title"><span>Trò chơi di động</span><i class="fa fa-angle-down"></i></div>
+                    <div class="content">
+                        <a href="#"><img src="./img/game_rov.png" alt="ROV"><span>ROV</span></a>
+                        <a href="#"><img src="./img/game_codm.png" alt="Call of Duty: Mobile"><span>Call of Duty: Mobile</span></a>
+                        <a href="#"><img src="./img/game_speed.png" alt="Speed Drifters"><span>Speed Drifters</span></a>
+                        <a href="#"><img src="./img/game_ff.png" alt="Free Fire"><span>Free Fire</span></a>
+                        <a href="#"><img src="./img/game_contra.png" alt="Contra"><span>Contra</span></a>
+                        <a href="#"><img src="./img/game_ftm.png" alt="FAIRY TAIL: Forces Unite!"><span>FAIRY TAIL: Forces Unite!</span></a>
+                        <a href="#"><img src="./img/game_ftth.png" alt="Fantasy Town"><span>Fantasy Town</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#">Dịch vụ khách hàng</a>
+        <a href="./regist.html"><span>Đăng ký</span><i class="fa fa-user-plus"></i></a>
+        <a href="./login.html"><span>Đăng nhập</span><i class="fa fa-unlock-alt"></i></a>
+    </div>
+
+    <div class="body">
+        <div class="slide">
+            <div class="item">
+                <img src="./img/pc_all.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Fantasy Town</span><span class="des">Trang trại vui vẻ</span>
+                    <div class="btn"><a href="#"><i class="fa fa-trophy"></i><span>Xem chi tiết</span></a></div>
+                </div>
+                <img src="./img/pc_ftth.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">RoE (Ring of Elysium)</span><span class="des">Thể loại Battle Royale hay nhất tại thời điểm hiện tại</span>
+                    <div class="btn"><a href="#"><i class="fa fa-trophy"></i><span>Xem chi tiết</span></a></div>
+                </div>
+                <img src="./img/pc_roe.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Speed Drifters</span><span class="des">Đua xe vui vẻ, chơi theo cách của bạn</span>
+                    <div class="btn"><a href="#"><i class="fa fa-trophy"></i><span>Xem chi tiết</span></a></div>
+                </div>
+                <img src="./img/pc_bns.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Contra</span><span class="des">Huyền thoại về đội Mahakan</span>
+                    <div class="btn"><a href="#"><i class="fa fa-trophy"></i><span>Xem chi tiết</span></a></div>
+                </div>
+                <img src="./img/pc_contra.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Free Fire</span><span class="des">Trò chơi sinh tồn số 1 tại Thái Lan</span>
+                    <div class="btn"><a href="#"><i class="fa fa-trophy"></i><span>Xem chi tiết</span></a></div>
+                </div>
+                <img src="./img/pc_ff.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">RoV</span><span class="des">Trò chơi MOBA trên di động, chơi mọi lúc, mọi nơi</span>
+                    <div class="btn"><a href="#"><i class="fa fa-gamepad"></i><span>Video trò chơi</span><i class="fa fa-caret-right"></i></a></div>
+                </div>
+                <img src="./img/pc_rov.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">EA SPORTS TM FIFA Online 4</span><span class="des">Trò chơi bóng đá số 1 tại Thái Lan</span>
+                    <div class="btn"><a href="#"><i class="fa fa-gamepad"></i><span>Video trò chơi</span><i class="fa fa-caret-right"></i></a></div>
+                </div>
+                <img src="./img/pc_fo4.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Garena eSports</span><span class="des">Giải đấu thể thao điện tử lớn nhất ở Thái Lan</span>
+                    <div class="btn"><a href="#"><i class="fa fa-trophy"></i><span>Xem chi tiết</span></a></div>
+                </div>
+                <img src="./img/pc_esport.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">League of Legends</span><span class="des">Trò chơi trực tuyến số 1 thế giới.</span>
+                    <div class="btn"><a href="#"><i class="fa fa-gamepad"></i><span>Video trò chơi</span><i class="fa fa-caret-right"></i></a></div>
+                </div>
+                <img src="./img/pc_lol.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Heroes of Newerth</span><span class="des">Trò chơi MOBA số 1 Thái Lan</span>
+                    <div class="btn"><a href="#"><i class="fa fa-gamepad"></i><span>Video trò chơi</span><i class="fa fa-caret-right"></i></a></div>
+                </div>
+                <img src="./img/pc_hon.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Blade & Soul</span><span class="des">MMORPG hành động, hình thức lớn nhất thế giới</span>
+                    <div class="btn"><a href="#"><i class="fa fa-gamepad"></i><span>Video trò chơi</span><i class="fa fa-caret-right"></i></a></div>
+                </div>
+                <img src="./img/pc_bns.jpg" alt="">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <span class="name">Garena</span><span class="des">Cộng đồng trực tuyến phù hợp với các game thủ.<br/>Thông tin phong phú, trò chơi vui nhộn và dịch vụ đầy đủ.</span>
+                    <div class="btn">
+                        <a href="#"><i class="fa fa-desktop"></i><span>Tải xuống Garena PC</span><i class="fa fa-arrow-down"></i></a>
+                        <a href="#"><i class="fa fa-tablet"></i><span>Tải xuống Garena Mobile</span><i class="fa fa-arrow-down"></i></a>
+                    </div>
+                </div>
+                <img src="./img/pc_garena.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span class="copyright">Copyright &copy; Garena Online. Trademarks belong to their respective owners. All rights reserved.</span>
+        <div class="list">
+            <a href="#">Thông tin dành cho cha mẹ</a>
+            <a href="#">Sự nghiệp</a>
+            <a href="#">Điều khoản dịch vụ</a>
+            <a href="#">Chính sách bảo mật</a>
+        </div>
+    </div>
+</body>
+</html>

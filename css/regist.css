@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-image: -webkit-radial-gradient(center top, ellipse, #2c3448, #292f3f 30%, #22242c 50%);
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    background-color: #000000;
+}
+
+.header > a > img {
+    width: 120%;
+}
+
+.page {
+    padding: 50px 10%;
+    display: flex;
+    flex-flow: column;
+    width: 55%;
+    margin: auto;
+}
+
+.page > h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+input, 
+select{
+    padding: 10px;
+    width: 100%;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    outline: 0;
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+}
+
+span {
+    color: red;
+    font-size: 12px;
+    padding: 5px 0;
+    display: none;
+}
+
+span > i {
+    padding-right: 5px;
+}
+
+p {
+    color: white;
+    font-size: 12px;
+}
+
+.confirm {
+    padding: 10px 0;
+}
+
+.confirm > i {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: green;
+    padding: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.confirm > i[data-check=false] {
+    color: white;
+}
+
+label {
+    color: #aaa;
+    font-size: 14px;
+}
+
+label > a {
+    color: red;
+    text-decoration: none;
+}
+
+button {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .page {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .page {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .page {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page {
+        padding: 30px 15px;
+        width: 100%;
+    }
+}

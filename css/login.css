@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-image: -webkit-radial-gradient(center top, ellipse, #2c3448, #292f3f 30%, #22242c 50%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    background-color: #000000;
+}
+
+.header > a > img {
+    width: 120%;
+}
+
+.page {
+    padding: 50px 10%;
+    display: flex;
+    flex-flow: column;
+    width: 55%;
+    margin: auto;
+}
+
+.page > h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+input, 
+select{
+    padding: 10px;
+    width: 100%;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    outline: 0;
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+}
+
+button {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.regist {
+    width: 100%;
+    border: 1px solid #777;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #2C2E39;
+}
+
+.forgot {
+    color: red;
+    width: 100%;
+    text-align: center;
+    margin: 20% 0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.line {
+    overflow: hidden;
+    width: calc(100% - 30px);
+    text-align: center;
+    display: block;
+    margin: 0 15px;
+}
+
+.line > span {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    color: #777;
+    padding: 10px;
+}
+
+.line > span::before {
+    left: 100%;
+}
+
+.line > span::after {
+    right: 100%;
+}
+
+.line > span::after,
+.line > span::before {
+    content: "";
+    width: 999px;
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+    top: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .page {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .page {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .page {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page {
+        padding: 30px 15px;
+        width: 100%;
+    }
+}
